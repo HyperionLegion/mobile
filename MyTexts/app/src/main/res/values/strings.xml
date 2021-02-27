@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyTexts</string>
+    <string name="submit">Submit</string>
+    <string name="nfl_playoff_team">NFL Playoff Team:</string>
+    <string-array name="teams">
+        <item>Bears</item>
+        <item>Chiefs</item>
+        <item>Bills</item>
+        <item>Colts</item>
+        <item>Steelers</item>
+        <item>Browns</item>
+        <item>Titans</item>
+        <item>Ravens</item>
+        <item>Packers</item>
+        <item>Saints</item>
+        <item>Seahawks</item>
+        <item>Rams</item>
+        <item>Washington</item>
+        <item>Buccaneers</item>
+    </string-array>
+</resources>
