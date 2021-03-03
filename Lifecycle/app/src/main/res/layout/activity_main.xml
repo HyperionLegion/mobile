@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onPause: "
+        app:layout_constraintEnd_toEndOf="@+id/resume"
+        app:layout_constraintStart_toStartOf="@+id/resume"
+        app:layout_constraintTop_toBottomOf="@+id/resume" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lifetime:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate:"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStart:"
+        app:layout_constraintEnd_toEndOf="@+id/create"
+        app:layout_constraintStart_toStartOf="@+id/create"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onResume: "
+        app:layout_constraintEnd_toEndOf="@+id/start"
+        app:layout_constraintStart_toStartOf="@+id/start"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+    <TextView
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStop:"
+        app:layout_constraintEnd_toEndOf="@+id/pause"
+        app:layout_constraintStart_toStartOf="@+id/pause"
+        app:layout_constraintTop_toBottomOf="@+id/pause" />
+
+    <TextView
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onRestart: "
+        app:layout_constraintEnd_toEndOf="@+id/stop"
+        app:layout_constraintStart_toStartOf="@+id/stop"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+    <TextView
+        android:id="@+id/destroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onDestroy: "
+        app:layout_constraintEnd_toEndOf="@+id/restart"
+        app:layout_constraintStart_toStartOf="@+id/restart"
+        app:layout_constraintTop_toBottomOf="@+id/restart" />
+
+    <TextView
+        android:id="@+id/currentCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate: "
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/currentStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStart: "
+        app:layout_constraintEnd_toEndOf="@+id/currentCreate"
+        app:layout_constraintStart_toStartOf="@+id/currentCreate"
+        app:layout_constraintTop_toBottomOf="@+id/currentCreate" />
+
+    <TextView
+        android:id="@+id/currentResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onResume:"
+        app:layout_constraintEnd_toEndOf="@+id/currentStart"
+        app:layout_constraintStart_toStartOf="@+id/currentStart"
+        app:layout_constraintTop_toBottomOf="@+id/currentStart" />
+
+    <TextView
+        android:id="@+id/currentPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onPause: "
+        app:layout_constraintEnd_toEndOf="@+id/currentResume"
+        app:layout_constraintStart_toStartOf="@+id/currentResume"
+        app:layout_constraintTop_toBottomOf="@+id/currentResume" />
+
+    <TextView
+        android:id="@+id/currentStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStop: "
+        app:layout_constraintEnd_toEndOf="@+id/currentPause"
+        app:layout_constraintStart_toStartOf="@+id/currentPause"
+        app:layout_constraintTop_toBottomOf="@+id/currentPause" />
+
+    <TextView
+        android:id="@+id/currentRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onRestart: "
+        app:layout_constraintEnd_toEndOf="@+id/currentStop"
+        app:layout_constraintStart_toStartOf="@+id/currentStop"
+        app:layout_constraintTop_toBottomOf="@+id/currentStop" />
+
+    <TextView
+        android:id="@+id/currentDestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onDestroy: "
+        app:layout_constraintEnd_toEndOf="@+id/currentRestart"
+        app:layout_constraintStart_toStartOf="@+id/currentRestart"
+        app:layout_constraintTop_toBottomOf="@+id/currentRestart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
