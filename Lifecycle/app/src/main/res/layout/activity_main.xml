@@ -158,4 +158,22 @@
         app:layout_constraintStart_toStartOf="@+id/currentRestart"
         app:layout_constraintTop_toBottomOf="@+id/currentRestart" />
 
+    <Button
+        android:id="@+id/lifetimeReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="@+id/destroy"
+        app:layout_constraintStart_toStartOf="@+id/destroy"
+        app:layout_constraintTop_toBottomOf="@+id/destroy" />
+
+    <Button
+        android:id="@+id/currentReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="@+id/currentDestroy"
+        app:layout_constraintStart_toStartOf="@+id/currentDestroy"
+        app:layout_constraintTop_toBottomOf="@+id/currentDestroy" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
