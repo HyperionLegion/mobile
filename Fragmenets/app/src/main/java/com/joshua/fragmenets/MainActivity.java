@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mTextView.setText("Fragment 1");
-                ft = getSupportFragmentManager().beginTransaction();
+                ft = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in,R.anim.fade_out, R.anim.fade_in, R.anim.slide_out );
                 if (f1.isAdded()) { // if the fragment is already in container
                     ft.show(f1);
                 } else { // fragment needs to be added to frame container
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mTextView.setText("Fragment 2");
-                ft = getSupportFragmentManager().beginTransaction();
+                ft = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in,R.anim.fade_out, R.anim.fade_in, R.anim.slide_out );
                 if (f2.isAdded()) { // if the fragment is already in container
                     ft.show(f2);
                 } else { // fragment needs to be added to frame container
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mTextView.setText("Fragment 3");
-                ft = getSupportFragmentManager().beginTransaction();
+                ft = getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in,R.anim.fade_out, R.anim.fade_in, R.anim.slide_out );
                 if (f3.isAdded()) { // if the fragment is already in container
                     ft.show(f3);
                 } else { // fragment needs to be added to frame container
