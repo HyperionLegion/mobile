@@ -7,12 +7,24 @@
     tools:context=".MainActivity">
 
     <view
+        android:id="@+id/view"
+        class="com.joshua.sprite.DrawView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.joshua.sprite.DrawView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WASD for controls (a bit unsmooth)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
